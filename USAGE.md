@@ -24,11 +24,13 @@ OOC messages. To help you with this,
 Akiyama has two little commands for you.
 
 > `.clearooc`
+
 Clears OOC messages in the channel. If you dont have
 the permissions to delete others' messages, Akiyama
 will only delete your own OOC messages.
 
 > `.autoclearooc [duration]`
+
 **Requires:** administrator permissions
 This is a setting, when set, Akiyama will delete any OOC message
 after *duration* seconds.
