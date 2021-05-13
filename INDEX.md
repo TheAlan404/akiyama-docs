@@ -1,9 +1,9 @@
 # Akiyama Docs
 Documents etc for Akiyama
 
-> Other languages
+> Language
 
-[Turkish/Türkçe](./README_tr.md)
+[Select language](./README.md)
 
 > Navigate
 
