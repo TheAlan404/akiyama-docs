@@ -1,6 +1,6 @@
 # Akiyama Docs
 
-[Back](./README.md)
+[Back](./INDEX.md)
 
 Usage
 -----
