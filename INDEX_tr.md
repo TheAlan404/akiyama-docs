@@ -1,9 +1,9 @@
 # Akiyama Docs
 Akiyama kılavuzu
 
-> Diğer diller
+> Select Language
 
-[English/İngilizce](./README.md)
+[Select Language](./README.md)
 
 > Menü
 
