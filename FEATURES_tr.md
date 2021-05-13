@@ -1,6 +1,6 @@
 # Akiyama Docs
 
-[Geri](./README.md)
+[Geri](./README_tr.md)
 
 Özellikler
 ----------
