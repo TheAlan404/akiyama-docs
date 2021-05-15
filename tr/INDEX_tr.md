@@ -3,7 +3,7 @@ Akiyama kılavuzu
 
 > Select Language
 
-[Select Language](./README.md)
+[Select Language](../README.md)
 
 > Menü
 
