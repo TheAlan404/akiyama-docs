@@ -2,6 +2,6 @@
 
 ## Select Language // Dil seçin
 
-[English / İngilizce](./INDEX.md)
+[English / İngilizce](./en/INDEX.md)
 
-[Turkish / Türkçe](./INDEX_tr.md)
+[Turkish / Türkçe](./tr/INDEX_tr.md)
