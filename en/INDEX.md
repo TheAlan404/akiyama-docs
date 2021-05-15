@@ -3,7 +3,7 @@ Documents etc for Akiyama
 
 > Language
 
-[Select language](./README.md)
+[Select language](../README.md)
 
 > Navigate
 
