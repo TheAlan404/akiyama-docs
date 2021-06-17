@@ -29,7 +29,7 @@ Akiyama has two little commands for you.
 
 ---
 
-> `.clearooc`
+> <a name="cmd_clearooc"></a> `.clearooc`
 
 **Aliases:** `.cooc`
 
@@ -39,7 +39,7 @@ will only delete your own OOC messages.
 
 ---
 
-> `.autoclearooc [duration]`
+> <a name="cmd_autoclearooc"></a> `.autoclearooc [duration]`
 
 **Requires:** administrator permissions
 
@@ -67,7 +67,9 @@ which gives access to where they are going and removes access from where they we
 
 ### User Commands
 
-> `.move`
+---
+
+> <a name="cmd_move"></a> `.move`
 
 **Requires:** none
 
@@ -78,7 +80,7 @@ Type the number to select and go to that area.
 
 ---
 
-> `.connections`
+> <a name="cmd_connections"></a> `.connections`
 
 **Requires:** none
 
@@ -90,7 +92,9 @@ Sends a list of the connections this area has.
 
 ### Admin Commands
 
-> `.create [category id] <name>`
+---
+
+> <a name="cmd_create"></a> `.create [category id] <name>`
 
 **Requires:** administrator permissions
 
@@ -103,7 +107,7 @@ Creates the channel in the same category the command has runned in.
 
 ---
 
-> `.bind [#channel(s)]`
+> <a name="cmd_bind"></a> `.bind [#channel(s)]`
 
 **Requires:** administrator permissions
 
@@ -118,7 +122,7 @@ Accepts multiple channels
 
 ---
 
-> `.bindcategory <category id>`
+> <a name="cmd_bindcategory"></a> `.bindcategory <category id>`
 
 **Requires:** administrator permissions
 
@@ -126,7 +130,7 @@ Binds a whole category/all the channels inside of it.
 
 ---
 
-> `.label`
+> <a name="cmd_label"></a> `.label`
 
 **Requires:** administrator permissions
 
@@ -153,7 +157,7 @@ Removes the connection.
 
 ---
 
-#### Requirements
+#### <a name="Requirements"></a> Requirements
 
 In Akiyama, you can have requirements in area connections.
 Requirements basically check for certain conditions, 
@@ -161,7 +165,7 @@ for example if the user has a role or not.
 
 Requirements can have a data associated with it.
 
-**Requirement Types**
+<a name="reqtypes"></a> **Requirement Types**
 - `item_has`
     data is an item id
     checks if the user has the item in their inventory
@@ -194,14 +198,18 @@ For example, a hotel room that requires a keycard.
 - Req. type is the requirement type, for example `item_has`
 - Req. data is the requirement's data.
   For example, if the requirement is `item_has` then it is the item's id.
-  All the types and what their data is [can be found here](#Requirements)
+  All the types and what their data is [can be found here](#reqtypes)
 
 *Examples:*
 - `.addreq 1 item_has ZMYSBI`
+
    add a requirement to the first connection,
    that checks if the user has the item with the ID 'ZMYSBI'
+
 - `.addreq 1 role_has 850810225933025320`
+
    add a requirement that checks for the role
+
 
 ---
 
