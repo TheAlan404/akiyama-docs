@@ -27,6 +27,8 @@ Sometimes the roleplay channel may be filled with
 OOC messages. To help you with this, 
 Akiyama has two little commands for you.
 
+---
+
 > `.clearooc`
 
 **Aliases:** `.cooc`
@@ -34,6 +36,8 @@ Akiyama has two little commands for you.
 Clears OOC messages in the channel. If you dont have
 the permissions to delete others' messages, Akiyama
 will only delete your own OOC messages.
+
+---
 
 > `.autoclearooc [duration]`
 
@@ -72,7 +76,7 @@ Type the number to select and go to that area.
 
 ![Move Command Usage by takipsizad](https://ta.is-inside.me/nTEPxm27.gif)
 
-
+---
 
 > `.connections`
 
@@ -81,6 +85,8 @@ Type the number to select and go to that area.
 **Aliases:** `.conns`
 
 Sends a list of the connections this area has.
+
+
 
 ### Admin Commands
 
@@ -95,6 +101,8 @@ Creates the channel in the same category the command has runned in.
 - `.create hotel-room-6`
 - `.create 852916054531637289 long-corridor`
 
+---
+
 > `.bind [#channel(s)]`
 
 **Requires:** administrator permissions
@@ -108,7 +116,7 @@ Accepts multiple channels
 - `.bind #security-office`
 - `.bind #hotel-room-2 #hotel-room-7 #elevator`
 
-
+---
 
 > `.bindcategory <category id>`
 
@@ -116,7 +124,7 @@ Accepts multiple channels
 
 Binds a whole category/all the channels inside of it.
 
-
+---
 
 > `.label`
 
@@ -127,7 +135,7 @@ Binds a whole category/all the channels inside of it.
 Sets a label for the area.
 Labels are nicknames that override the name in `.move` or `.connections`
 
-
+---
 
 > `.connect <#channel1> <#channel2>`
 
@@ -135,7 +143,7 @@ Labels are nicknames that override the name in `.move` or `.connections`
 
 Connects two areas, so the users can use `.move` to move between the two areas.
 
-
+---
 
 > `.deconnect <#channel1> <#channel2>`
 
@@ -143,7 +151,7 @@ Connects two areas, so the users can use `.move` to move between the two areas.
 
 Removes the connection.
 
-
+---
 
 #### Requirements
 
@@ -170,7 +178,7 @@ There are more requirements, but they are WIP.
 
 Okay, now back to the commands.
 
-
+---
 
 > `.addrequirement <connection idx.> <req. type> <req. data>`
 
@@ -195,7 +203,7 @@ For example, a hotel room that requires a keycard.
 - `.addreq 1 role_has 850810225933025320`
    add a requirement that checks for the role
 
-
+---
 
 > `.removerequirement <connection index> <requirement index>`
 
@@ -209,6 +217,7 @@ Removes a requirement. The requirement index is listed in the `.connections` com
 - `.remreq 1 1`
 - `.remreq 2 1`
 
+---
 
 ## Item Management
 
