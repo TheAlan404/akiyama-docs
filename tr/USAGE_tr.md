@@ -94,6 +94,18 @@ Bu alanın bağlı olduğu diğer alanları listeler.
 
 ---
 
+> <a name="cmd_forcemove"></a> `.forcemove <@kullanıcı>`
+
+**Gereksinim:** "kullanıcıları hareket ettir/move members" izni
+
+Bir kişiyi zorla bir alandan diğerine gönderir.
+`.move` ile aynı menü gözükür ama alan seçilince
+etiketlenen kişi hiçbir gereksinime bakılmadan o alana gider.
+
+Örnek kullanımı mahkümları kendi hapislerine koymak olabilir.
+
+---
+
 > <a name="cmd_create"></a> `.create [kategori id'si] <isim>`
 
 **Gereksinim:** yönetici izni
@@ -192,44 +204,42 @@ Daha fazla gereksinim tipi var ama yapımdadır.
 
 ---
 
-> `.addrequirement <connection idx.> <req. type> <req. data>`
+> `.addrequirement <bağlantı no.> <gereksinim tipi> <gereksinim değeri>`
 
-**Requires:** administrator permissions
+**Gereksinim:** yönetici izni
 
-**Aliases:** `.addreq`
+**Kısaltmalar:** `.addreq`
 
-Adds a requirement to a connection. This can be used to "lock" an area to certain users.
-For example, a hotel room that requires a keycard.
+Bir bağlantıya gereksinim ekler. Bunu kullanarak bir alanı "kilitleyebilirsiniz".
+Örneğin girmek için bir anahtar gerektiren otel odası.
 
-✨ **Editors Note!:** This looks very complicated, but trust me, its easy.
-- Connection index is the number that you type when you use `.move`
-- Req. type is the requirement type, for example `item_has`
-- Req. data is the requirement's data.
-  For example, if the requirement is `item_has` then it is the item's id.
-  All the types and what their data is [can be found here](#reqtypes)
+✨ **Editörün Notu:** Bu çok karmaşık görünüyor olabilir ama aslında kolay.
+- Bağlantı no.'su `.move` ve `.connections` da çıkan ilk numaradır. (`.move`'da yazdığın sayı)
+- Gereksinim tipi, gereksinimin tipidir. Örneğin role bakmak için `role_has`
+- Gereksinim değeri, gereksinim tipine bağlıdır. Mesela `role_has` ise rolün id'sidir.
+Gereksinim tiplerine ve değerlerinin anlamlarına [buradan bakabilirsin](#reqtypes)
 
-*Examples:*
+*Örnekler:*
 - `.addreq 1 item_has ZMYSBI`
 
-   add a requirement to the first connection,
-   that checks if the user has the item with the ID 'ZMYSBI'
+   ilk (`1`) bağlantıya `ZMYSBI` id'li item var mı (`item_has`) diye bir gereksinim ekle
 
 - `.addreq 1 role_has 850810225933025320`
 
-   add a requirement that checks for the role
+   850...20 id'li rol var mı (`role_has`) diye bir gereksinim ekle
 
 
 ---
 
-> `.removerequirement <connection index> <requirement index>`
+> `.removerequirement <bağlantı no.> <gereksinim no.>`
 
-**Requires:** administrator permissions
+**Gereksinim:** yönetici izni
 
-**Aliases:** `.remreq`
+**Kısaltmalar:** `.remreq`
 
-Removes a requirement. The requirement index is listed in the `.connections` command.
+Bir gereksinimi siler. `.connections` ile gereksinim numarasını bulabilirsin.
 
-*Examples:*
+*Örnek:*
 - `.remreq 1 1`
 - `.remreq 2 1`
 
