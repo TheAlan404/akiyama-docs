@@ -94,6 +94,18 @@ Sends a list of the connections this area has.
 
 ---
 
+> <a name="cmd_forcemove"></a> `.forcemove <@user>`
+
+**Requires:** "move member" permissions
+
+Forcefully moves a user from one area to another.
+The same prompt for `.move` is given, but after selection
+the mentioned user is moved without checking for any requirements.
+
+For example, use this command to move your prisoners into their jail cell.
+
+---
+
 > <a name="cmd_create"></a> `.create [category id] <name>`
 
 **Requires:** administrator permissions
